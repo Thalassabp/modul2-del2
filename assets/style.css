@@ -3,6 +3,32 @@ margin: 0px;
 padding: 0px;
 font-family: arial, sans-serif;
 text-align: center;
+
+}
+
+#loginform {
+border-radius: 5px;
+height: 125px;
+margin-left: 375px;
+margin-right: 375px;
+padding: 10px;
+background-color: #f2f2f2;
+}
+
+#login2 {
+border: solid 1px;
+height: 300px;
+margin-left: 375px;
+margin-right: 375px;
+padding: 10px;
+}
+
+#registrer {
+border: solid 1px;
+height: 350px;
+margin-left: 375px;
+margin-right: 375px;
+padding: 10px;
 }
 
 input[type="text"], input[type="password"] {
@@ -18,7 +44,7 @@ margin: 20px auto;
 input[type="submit"] {
 padding: 10px;
 color: #fff;
-background: #0098cb;
+background: #bfcfe2 ;
 width: 320px;
 margin: 20px auto;
 margin-top: 0px;
@@ -29,7 +55,7 @@ cursor: pointer;
 }
 
 input[type="submit"]:hover {
-background: #00b8eb;
+background: #b3d9ff;
 }
 
 .header {

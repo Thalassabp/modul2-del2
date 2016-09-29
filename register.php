@@ -1,4 +1,11 @@
 <?php
+
+session_start();
+
+if( isset($_SESSION['user_id']) ){
+header("Location: /");
+}
+
 require 'database.php';
 
 $message = '';
@@ -14,6 +21,7 @@ $stmt->bindParam(':password', password_hash($_POST['password'], PASSWORD_BCRYPT)
 
 if( $stmt->execute() ):
 $message = 'Oprettelsen af ny bruger var en success';
+
 else:
 $message = 'Ny bruger blev ikke oprettet';
 endif;
@@ -41,14 +49,16 @@ if(!empty($message)):
 <?php
   endif;  
 ?>    
-    
-<h1>Register</h1>
- <span> Or <a href="login.php">login here</a> </span>
+ 
+<div id="registrer">  
+<h1>Registrer</h1>
+ <span> eller <a href="login.php">log ind her</a> </span>
     <form action="register.php" method="POST">
-<input type="text" placeholder="Enter your email" name="email">    
- <input type="password" placeholder="And password" name="password">
-<input type="password" placeholder="confirm password" name="confirm_password">
+<input type="text" placeholder="Email Adresse" name="email">    
+ <input type="password" placeholder="Password" name="password">
+<input type="password" placeholder="Bekræft password" name="confirm_password">
 <input type="submit">    
 </form
+</div>          
 </body>
 </html>
