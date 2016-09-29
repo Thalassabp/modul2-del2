@@ -40,7 +40,7 @@ endif;
 
 <body>
     <div class="header">
-<a href="/">Homepage</a>    
+<a href="/">Startside</a>    
 </div>    
 <?php
 if(!empty($message)):  

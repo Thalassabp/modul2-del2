@@ -7,12 +7,11 @@ text-align: center;
 }
 
 #loginform {
-border-radius: 5px;
-height: 125px;
+border: 1px solid;
+height: 175px;
 margin-left: 375px;
 margin-right: 375px;
 padding: 10px;
-background-color: #f2f2f2;
 }
 
 #login2 {
@@ -68,4 +67,5 @@ text-align: center;
 .header a {
 color: #333;
 text-decoration: none;
+font-size: 40px;
 }
